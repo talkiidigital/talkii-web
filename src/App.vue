@@ -260,9 +260,13 @@
       </div>
     </section>
 
-    <!-- Pricing Section (Plano Único) -->
-    <section id="precos" class="py-20 bg-gray-50">
-      <div class="container-custom">
+    <!-- Pricing Section (Reimaginada - Plano Único) -->
+    <section id="precos" class="relative py-24 bg-gray-50 overflow-hidden">
+      <span
+        class="pointer-events-none absolute -top-20 -right-16 w-72 h-72 bg-secondary-300/40 blur-3xl rounded-full"></span>
+      <span
+        class="pointer-events-none absolute -bottom-24 -left-20 w-96 h-96 bg-primary-300/30 blur-3xl rounded-full"></span>
+      <div class="container-custom relative">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {{ t.pricingTitle }}
@@ -270,42 +274,47 @@
           <p class="text-xl text-gray-600">{{ t.pricingSubtitle }}</p>
         </div>
 
-        <div class="max-w-3xl mx-auto">
-          <div class="p-[1px] rounded-3xl bg-gradient-to-r from-primary-500 to-secondary-500 shadow-2xl">
-            <div class="bg-white rounded-3xl p-8 md:p-10">
-              <div class="flex items-center justify-between mb-6">
-                <h3 class="text-2xl font-bold text-gray-900">{{ t.premiumPlan }}</h3>
-                <span
-                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700">Plano
-                  Único</span>
+        <div class="max-w-5xl mx-auto">
+          <div class="p-[2px] rounded-3xl bg-gradient-to-r from-primary-500 to-secondary-500 shadow-2xl">
+            <div class="rounded-3xl bg-white/80 backdrop-blur p-8 md:p-12">
+              <div class="md:grid md:grid-cols-2 md:gap-10 items-center">
+                <div>
+                  <div class="flex items-center gap-3 mb-4">
+                    <span
+                      class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700">Plano
+                      único</span>
+                    <span class="text-xs uppercase tracking-wider text-gray-500">Sem fidelidade</span>
+                  </div>
+                  <h3 class="text-3xl font-extrabold text-gray-900 mb-2">{{ t.premiumPlan }}</h3>
+                  <div class="flex items-end gap-2 mb-6">
+                    <span class="text-6xl font-extrabold gradient-text">{{ t.premiumPrice }}</span>
+                    <span class="text-gray-600 mb-3">/{{ t.month }}</span>
+                  </div>
+                  <button class="w-full md:w-auto btn-primary px-8">{{ t.getStarted }}</button>
+                  <p class="text-sm text-gray-600 mt-3">7 dias grátis. Cancele quando quiser.</p>
+                </div>
+
+                <div class="mt-8 md:mt-0">
+                  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <li class="flex items-center">
+                      <Check class="h-5 w-5 text-green-500 mr-3" />
+                      <span class="text-gray-700">{{ t.premiumFeature1 }}</span>
+                    </li>
+                    <li class="flex items-center">
+                      <Check class="h-5 w-5 text-green-500 mr-3" />
+                      <span class="text-gray-700">{{ t.premiumFeature2 }}</span>
+                    </li>
+                    <li class="flex items-center">
+                      <Check class="h-5 w-5 text-green-500 mr-3" />
+                      <span class="text-gray-700">{{ t.premiumFeature3 }}</span>
+                    </li>
+                    <li class="flex items-center">
+                      <Check class="h-5 w-5 text-green-500 mr-3" />
+                      <span class="text-gray-700">{{ t.premiumFeature4 }}</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-              <div class="flex items-end gap-2 mb-6">
-                <span class="text-5xl font-extrabold gradient-text">{{ t.premiumPrice }}</span>
-                <span class="text-gray-600 mb-2">/{{ t.month }}</span>
-              </div>
-
-              <ul class="space-y-4 mb-8">
-                <li class="flex items-center">
-                  <Check class="h-5 w-5 text-green-500 mr-3" />
-                  <span class="text-gray-700">{{ t.premiumFeature1 }}</span>
-                </li>
-                <li class="flex items-center">
-                  <Check class="h-5 w-5 text-green-500 mr-3" />
-                  <span class="text-gray-700">{{ t.premiumFeature2 }}</span>
-                </li>
-                <li class="flex items-center">
-                  <Check class="h-5 w-5 text-green-500 mr-3" />
-                  <span class="text-gray-700">{{ t.premiumFeature3 }}</span>
-                </li>
-                <li class="flex items-center">
-                  <Check class="h-5 w-5 text-green-500 mr-3" />
-                  <span class="text-gray-700">{{ t.premiumFeature4 }}</span>
-                </li>
-              </ul>
-
-              <button class="w-full btn-primary">{{ t.getStarted }}</button>
-              <p class="text-sm text-gray-500 text-center mt-4">Sem fidelidade. Cancele quando quiser.</p>
             </div>
           </div>
         </div>
