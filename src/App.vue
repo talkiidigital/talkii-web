@@ -260,53 +260,54 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing Section (Plano Único) -->
     <section id="precos" class="py-20 bg-gray-50">
       <div class="container-custom">
-        <div class="text-center mb-16">
+        <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {{ t.pricingTitle }}
           </h2>
           <p class="text-xl text-gray-600">{{ t.pricingSubtitle }}</p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto">
+          <div class="p-[1px] rounded-3xl bg-gradient-to-r from-primary-500 to-secondary-500 shadow-2xl">
+            <div class="bg-white rounded-3xl p-8 md:p-10">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="text-2xl font-bold text-gray-900">{{ t.premiumPlan }}</h3>
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700">Plano
+                  Único</span>
+              </div>
 
+              <div class="flex items-end gap-2 mb-6">
+                <span class="text-5xl font-extrabold gradient-text">{{ t.premiumPrice }}</span>
+                <span class="text-gray-600 mb-2">/{{ t.month }}</span>
+              </div>
 
-          <!-- Pro Plan -->
-          <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border-2 border-primary-500 relative">
-            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span class="bg-primary-500 text-white px-4 py-2 rounded-full text-sm font-medium">
-                {{ t.mostPopular }}
-              </span>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <Check class="h-5 w-5 text-green-500 mr-3" />
+                  <span class="text-gray-700">{{ t.premiumFeature1 }}</span>
+                </li>
+                <li class="flex items-center">
+                  <Check class="h-5 w-5 text-green-500 mr-3" />
+                  <span class="text-gray-700">{{ t.premiumFeature2 }}</span>
+                </li>
+                <li class="flex items-center">
+                  <Check class="h-5 w-5 text-green-500 mr-3" />
+                  <span class="text-gray-700">{{ t.premiumFeature3 }}</span>
+                </li>
+                <li class="flex items-center">
+                  <Check class="h-5 w-5 text-green-500 mr-3" />
+                  <span class="text-gray-700">{{ t.premiumFeature4 }}</span>
+                </li>
+              </ul>
+
+              <button class="w-full btn-primary">{{ t.getStarted }}</button>
+              <p class="text-sm text-gray-500 text-center mt-4">Sem fidelidade. Cancele quando quiser.</p>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ t.premiumPlan }}</h3>
-            <div class="mb-6">
-              <span class="text-4xl font-bold gradient-text">{{ t.premiumPrice }}</span>
-              <span class="text-gray-600">/{{ t.month }}</span>
-            </div>
-            <ul class="space-y-4 mb-8">
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.premiumFeature1 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.premiumFeature2 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.premiumFeature3 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.premiumFeature4 }}</span>
-              </li>
-            </ul>
-            <button class="w-full btn-primary">{{ t.getStarted }}</button>
           </div>
-
-
         </div>
       </div>
     </section>
