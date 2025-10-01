@@ -97,10 +97,10 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
-              <button class="btn-primary">
+              <!-- <button class="btn-primary">
                 {{ t.tryFree }}
-              </button>
-              <button class="btn-secondary">
+              </button> -->
+              <button class="btn-primary" @click="scrollToSection('como-funciona')">
                 {{ t.seeHowWorks }}
               </button>
             </div>
@@ -630,5 +630,12 @@ const closeMobileMenu = () => {
 
 const toggleFaq = (index: number) => {
   faqs.value[index].open = !faqs.value[index].open
+}
+
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 }
 </script>
