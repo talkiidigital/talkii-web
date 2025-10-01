@@ -6,8 +6,8 @@
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <div class="flex items-center space-x-2">
-            <Heart class="h-8 w-8 text-primary-500" />
-            <span class="text-2xl font-bold gradient-text">ProDate</span>
+            <img :src="talkiiLogo" alt="Logo Talkii" class="h-7 w-auto" />
+            <span class="text-2xl font-bold gradient-text">Talkii</span>
           </div>
 
           <!-- Desktop Navigation -->
@@ -410,8 +410,8 @@
       <div class="container-custom">
         <div class="text-center">
           <div class="flex items-center justify-center space-x-2 mb-4">
-            <Heart class="h-8 w-8 text-primary-400" />
-            <span class="text-2xl font-bold">ProDate</span>
+            <img :src="talkiiLogo" alt="Logo Talkii" class="h-7 w-auto" />
+            <span class="text-2xl font-bold">Talkii</span>
           </div>
           <p class="text-gray-400 mb-6">{{ t.footerText }}</p>
           <div class="flex justify-center space-x-6 text-sm text-gray-400">
@@ -420,7 +420,7 @@
             <a href="#" class="hover:text-white transition-colors">{{ t.contact }}</a>
           </div>
           <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-            © 2025 ProDate. {{ t.allRightsReserved }}
+            © 2025 Talkii. {{ t.allRightsReserved }}
           </div>
         </div>
       </div>
@@ -446,6 +446,7 @@ import {
 
 import heroImage from './assets/hero-image.png'
 import automationImage from './assets/automation-illustration.png'
+import talkiiLogo from './assets/talkii_logo.png'
 
 type Language = 'pt' | 'en'
 const currentLanguage = ref<Language>('pt')
@@ -473,7 +474,7 @@ const translations = {
     seeHowWorks: "Ver Como Funciona",
 
     // How It Works
-    howItWorksTitle: "Como a ProDate funciona para você",
+    howItWorksTitle: "Como a Talkii funciona para você",
     howItWorksSubtitle: "Três passos simples para transformar seus matches em encontros reais",
     step1Title: "1. Conecte seus apps",
     step1Description: "Integre Tinder, Bumble, Hinge e outros aplicativos de relacionamento de forma segura",
@@ -483,7 +484,7 @@ const translations = {
     step3Description: "Receba o contato quando a pessoa estiver pronta para o encontro real",
 
     // Benefits
-    benefitsTitle: "Por que escolher a ProDate?",
+    benefitsTitle: "Por que escolher a Talkii?",
     benefitsSubtitle: "Transforme sua experiência em aplicativos de relacionamento",
     saveTime: "Economize Tempo",
     saveTimeDesc: "Sem horas perdidas em conversas que não levam a lugar nenhum",
@@ -498,11 +499,11 @@ const translations = {
     testimonialsTitle: "O que nossos usuários dizem",
     testimonialsSubtitle: "Histórias reais de sucesso",
     testimonial1Name: "Marina, 28",
-    testimonial1Text: "Em 2 semanas consegui 5 encontros reais! A ProDate realmente funciona. Não perco mais tempo com conversas que não vão dar em nada.",
+    testimonial1Text: "Em 2 semanas consegui 5 encontros reais! A Talkii realmente funciona. Não perco mais tempo com conversas que não vão dar em nada.",
     testimonial2Name: "Rafael, 32",
-    testimonial2Text: "Trabalho muito e não tinha tempo para ficar conversando. A ProDate me ajudou a encontrar alguém especial sem o estresse.",
+    testimonial2Text: "Trabalho muito e não tinha tempo para ficar conversando. A Talkii me ajudou a encontrar alguém especial sem o estresse.",
     testimonial3Name: "Carla, 26",
-    testimonial3Text: "Sou tímida para iniciar conversas. A ProDate quebrou o gelo por mim e agora estou namorando há 6 meses!",
+    testimonial3Text: "Sou tímida para iniciar conversas. A Talkii quebrou o gelo por mim e agora estou namorando há 6 meses!",
 
     // Pricing
     pricingTitle: "Planos que cabem no seu bolso",
@@ -529,8 +530,8 @@ const translations = {
 
     // FAQ
     faqTitle: "Perguntas Frequentes",
-    faqSubtitle: "Tire suas dúvidas sobre a ProDate",
-    faq1Question: "Como a ProDate garante a segurança dos meus dados?",
+    faqSubtitle: "Tire suas dúvidas sobre a Talkii",
+    faq1Question: "Como a Talkii garante a segurança dos meus dados?",
     faq1Answer: "Utilizamos criptografia de ponta e seguimos rigorosamente a LGPD. Seus dados nunca são compartilhados com terceiros.",
     faq2Question: "A IA realmente conversa de forma natural?",
     faq2Answer: "Sim! Nossa IA é treinada com milhões de conversas reais e se adapta ao seu estilo de comunicação.",
@@ -541,7 +542,7 @@ const translations = {
 
     // CTA
     ctaTitle: "Pronto para encontrar alguém especial?",
-    ctaSubtitle: "Junte-se a milhares de pessoas que já transformaram sua vida amorosa com a ProDate",
+    ctaSubtitle: "Junte-se a milhares de pessoas que já transformaram sua vida amorosa com a Talkii",
     ctaButton: "Começar Minha Jornada",
 
     // Footer
@@ -571,7 +572,7 @@ const translations = {
     seeHowWorks: "See How It Works",
 
     // How It Works
-    howItWorksTitle: "How ProDate works for you",
+    howItWorksTitle: "How Talkii works for you",
     howItWorksSubtitle: "Three simple steps to turn your matches into real dates",
     step1Title: "1. Connect your apps",
     step1Description: "Securely integrate Tinder, Bumble, Hinge and other dating apps",
@@ -581,7 +582,7 @@ const translations = {
     step3Description: "Get the contact when the person is ready for the real date",
 
     // Benefits
-    benefitsTitle: "Why choose ProDate?",
+    benefitsTitle: "Why choose Talkii?",
     benefitsSubtitle: "Transform your dating app experience",
     saveTime: "Save Time",
     saveTimeDesc: "No more hours wasted on conversations that lead nowhere",
@@ -596,11 +597,11 @@ const translations = {
     testimonialsTitle: "What our users say",
     testimonialsSubtitle: "Real success stories",
     testimonial1Name: "Marina, 28",
-    testimonial1Text: "In 2 weeks I got 5 real dates! ProDate really works. I don't waste time anymore with conversations that go nowhere.",
+    testimonial1Text: "In 2 weeks I got 5 real dates! Talkii really works. I don't waste time anymore with conversations that go nowhere.",
     testimonial2Name: "Rafael, 32",
-    testimonial2Text: "I work a lot and didn't have time to keep chatting. ProDate helped me find someone special without the stress.",
+    testimonial2Text: "I work a lot and didn't have time to keep chatting. Talkii helped me find someone special without the stress.",
     testimonial3Name: "Carla, 26",
-    testimonial3Text: "I'm shy about starting conversations. ProDate broke the ice for me and now I've been dating for 6 months!",
+    testimonial3Text: "I'm shy about starting conversations. Talkii broke the ice for me and now I've been dating for 6 months!",
 
     // Pricing
     pricingTitle: "Plans that fit your budget",
@@ -623,8 +624,8 @@ const translations = {
 
     // FAQ
     faqTitle: "Frequently Asked Questions",
-    faqSubtitle: "Get your questions about ProDate answered",
-    faq1Question: "How does ProDate ensure the security of my data?",
+    faqSubtitle: "Get your questions about Talkii answered",
+    faq1Question: "How does Talkii ensure the security of my data?",
     faq1Answer: "We use end-to-end encryption and strictly follow GDPR. Your data is never shared with third parties.",
     faq2Question: "Does the AI really chat naturally?",
     faq2Answer: "Yes! Our AI is trained with millions of real conversations and adapts to your communication style.",
@@ -635,7 +636,7 @@ const translations = {
 
     // CTA
     ctaTitle: "Ready to find someone special?",
-    ctaSubtitle: "Join thousands of people who have already transformed their love life with ProDate",
+    ctaSubtitle: "Join thousands of people who have already transformed their love life with Talkii",
     ctaButton: "Start My Journey",
 
     // Footer
