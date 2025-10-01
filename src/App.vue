@@ -284,7 +284,7 @@
                     <span class="text-6xl font-extrabold gradient-text">{{ displayPremiumPrice }}</span>
                     <span class="text-gray-600 mb-3">/{{ t.month }}</span>
                   </div>
-                  <button class="w-full md:w-auto btn-primary px-8">{{ t.getStarted }}</button>
+                  <button class="w-full md:w-auto btn-primary px-8" @click="openCheckout">{{ t.getStarted }}</button>
                   <p class="text-sm text-gray-600 mt-3">{{ t.trialText }}</p>
                 </div>
 
@@ -355,7 +355,8 @@
           {{ t.ctaSubtitle }}
         </p>
         <button
-          class="bg-white text-primary-600 font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105 shadow-lg text-lg">
+          class="bg-white text-primary-600 font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors transform hover:scale-105 shadow-lg text-lg"
+          @click="scrollToSection('precos')">
           {{ t.ctaButton }}
         </button>
       </div>
@@ -415,7 +416,7 @@ const translations = {
     pricing: "Preços",
     about: "Sobre",
     contact: "Contato",
-    getStarted: "Começar Agora",
+    getStarted: "Assinar Agora",
 
     // Hero Section
     revolutionize: "🚀 Revolucione seus encontros",
@@ -511,7 +512,7 @@ const translations = {
     pricing: "Pricing",
     about: "About",
     contact: "Contact",
-    getStarted: "Get Started",
+    getStarted: "Subscribe Now",
 
     // Hero Section
     revolutionize: "🚀 Revolutionize your dating",
@@ -640,5 +641,9 @@ const scrollToSection = (id: string) => {
   if (el) {
     el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
+}
+
+const openCheckout = () => {
+  window.open('https://pay.kiwify.com.br/0TerLGs', '_blank', 'noopener')
 }
 </script>
