@@ -170,17 +170,11 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="text-center card-hover p-6 bg-white rounded-xl shadow-lg">
             <Clock class="h-12 w-12 text-primary-500 mx-auto mb-4" />
             <h3 class="text-lg font-bold text-gray-900 mb-2">{{ t.saveTime }}</h3>
             <p class="text-gray-600 text-sm">{{ t.saveTimeDesc }}</p>
-          </div>
-
-          <div class="text-center card-hover p-6 bg-white rounded-xl shadow-lg">
-            <Target class="h-12 w-12 text-secondary-500 mx-auto mb-4" />
-            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ t.effectiveMatches }}</h3>
-            <p class="text-gray-600 text-sm">{{ t.effectiveMatchesDesc }}</p>
           </div>
 
           <div class="text-center card-hover p-6 bg-white rounded-xl shadow-lg">
@@ -281,17 +275,17 @@
                 <div>
                   <div class="flex items-center gap-3 mb-4">
                     <span
-                      class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700">Plano
-                      único</span>
-                    <span class="text-xs uppercase tracking-wider text-gray-500">Sem fidelidade</span>
+                      class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700">{{
+                        t.planBadge }}</span>
+                    <span class="text-xs uppercase tracking-wider text-gray-500">{{ t.noCommitment }}</span>
                   </div>
                   <h3 class="text-3xl font-extrabold text-gray-900 mb-2">{{ t.premiumPlan }}</h3>
                   <div class="flex items-end gap-2 mb-6">
-                    <span class="text-6xl font-extrabold gradient-text">{{ t.premiumPrice }}</span>
+                    <span class="text-6xl font-extrabold gradient-text">{{ displayPremiumPrice }}</span>
                     <span class="text-gray-600 mb-3">/{{ t.month }}</span>
                   </div>
                   <button class="w-full md:w-auto btn-primary px-8">{{ t.getStarted }}</button>
-                  <p class="text-sm text-gray-600 mt-3">7 dias grátis. Cancele quando quiser.</p>
+                  <p class="text-sm text-gray-600 mt-3">{{ t.trialText }}</p>
                 </div>
 
                 <div class="mt-8 md:mt-0">
@@ -397,7 +391,6 @@ import {
   MessageCircle,
   Smartphone,
   Clock,
-  Target,
   TrendingUp,
   Star,
   Check,
@@ -450,11 +443,10 @@ const translations = {
     benefitsSubtitle: "Transforme sua experiência em aplicativos de relacionamento",
     saveTime: "Economize Tempo",
     saveTimeDesc: "Sem horas perdidas em conversas que não levam a lugar nenhum",
-    effectiveMatches: "Matches Efetivos",
-    effectiveMatchesDesc: "Foco apenas em pessoas realmente interessadas em se encontrar",
+
     naturalConversations: "Conversas Naturais",
     naturalConversationsDesc: "IA treinada para conversas autênticas e envolventes",
-    provenResults: "Resultados Comprovados",
+    provenResults: "Ótimos Resultados",
     provenResultsDesc: "Aumente suas chances de conseguir encontros reais",
 
     // Testimonials
@@ -470,12 +462,15 @@ const translations = {
     // Pricing
     pricingTitle: "Planos que cabem no seu bolso",
     pricingSubtitle: "Escolha o plano ideal para você",
+    planBadge: "Plano único",
+    noCommitment: "SEM FIDELIDADE",
+    trialText: "7 dias grátis. Cancele quando quiser.",
     basicPlan: "Básico",
     basicPrice: "R$ 29",
     proPlan: "Pro",
     proPrice: "R$ 59",
     premiumPlan: "Premium",
-    premiumPrice: "R$ 99",
+    premiumPrice: "R$ 29",
     month: "mês",
     mostPopular: "Mais Popular",
     basicFeature1: "1 aplicativo conectado",
@@ -544,11 +539,10 @@ const translations = {
     benefitsSubtitle: "Transform your dating experience",
     saveTime: "Save Time",
     saveTimeDesc: "No more hours wasted on conversations that lead nowhere",
-    effectiveMatches: "Effective Matches",
-    effectiveMatchesDesc: "Focus only on people really interested in meeting",
+
     naturalConversations: "Natural Conversations",
     naturalConversationsDesc: "AI trained for authentic and engaging conversations",
-    provenResults: "Proven Results",
+    provenResults: "Great Results",
     provenResultsDesc: "Increase your chances of getting real dates",
 
     // Testimonials
@@ -564,12 +558,19 @@ const translations = {
     // Pricing
     pricingTitle: "Plans that fit your budget",
     pricingSubtitle: "Choose the ideal plan for you",
+    planBadge: "Single plan",
+    noCommitment: "NO COMMITMENT",
+    trialText: "7-day free trial. Cancel anytime.",
     basicPlan: "Basic",
     basicPrice: "$19",
     proPlan: "Pro",
     proPrice: "$39",
     premiumPlan: "Premium",
-    premiumPrice: "$69",
+    premiumPrice: "$6",
+    premiumFeature1: "All apps",
+    premiumFeature2: "Personal coach",
+    premiumFeature3: "Advanced analytics",
+    premiumFeature4: "24/7 support",
     month: "month",
     mostPopular: "Most Popular",
     basicFeature1: "1 connected app",
@@ -615,6 +616,8 @@ const buildFaqs = (tr: Translation, prev: FaqItem[] = []): FaqItem[] => ([
 // inicializa e mantém as perguntas sincronizadas com o idioma
 faqs.value = buildFaqs(t.value)
 watch(t, (tr) => { faqs.value = buildFaqs(tr, faqs.value) })
+
+const displayPremiumPrice = computed(() => t.value.premiumPrice)
 
 const toggleLanguage = () => {
   currentLanguage.value = currentLanguage.value === 'pt' ? 'en' : 'pt'
