@@ -271,29 +271,7 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <!-- Basic Plan -->
-          <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ t.basicPlan }}</h3>
-            <div class="mb-6">
-              <span class="text-4xl font-bold gradient-text">{{ t.basicPrice }}</span>
-              <span class="text-gray-600">/{{ t.month }}</span>
-            </div>
-            <ul class="space-y-4 mb-8">
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.basicFeature1 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.basicFeature2 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.basicFeature3 }}</span>
-              </li>
-            </ul>
-            <button class="w-full btn-secondary">{{ t.getStarted }}</button>
-          </div>
+
 
           <!-- Pro Plan -->
           <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border-2 border-primary-500 relative">
@@ -302,34 +280,6 @@
                 {{ t.mostPopular }}
               </span>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ t.proPlan }}</h3>
-            <div class="mb-6">
-              <span class="text-4xl font-bold gradient-text">{{ t.proPrice }}</span>
-              <span class="text-gray-600">/{{ t.month }}</span>
-            </div>
-            <ul class="space-y-4 mb-8">
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.proFeature1 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.proFeature2 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.proFeature3 }}</span>
-              </li>
-              <li class="flex items-center">
-                <Check class="h-5 w-5 text-green-500 mr-3" />
-                <span class="text-gray-700">{{ t.proFeature4 }}</span>
-              </li>
-            </ul>
-            <button class="w-full btn-primary">{{ t.getStarted }}</button>
-          </div>
-
-          <!-- Premium Plan -->
-          <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">{{ t.premiumPlan }}</h3>
             <div class="mb-6">
               <span class="text-4xl font-bold gradient-text">{{ t.premiumPrice }}</span>
@@ -353,8 +303,10 @@
                 <span class="text-gray-700">{{ t.premiumFeature4 }}</span>
               </li>
             </ul>
-            <button class="w-full btn-secondary">{{ t.getStarted }}</button>
+            <button class="w-full btn-primary">{{ t.getStarted }}</button>
           </div>
+
+
         </div>
       </div>
     </section>
