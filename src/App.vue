@@ -493,14 +493,10 @@ const translations = {
     // FAQ
     faqTitle: "Perguntas Frequentes",
     faqSubtitle: "Tire suas dúvidas sobre a Talkii",
-    faq1Question: "Como a Talkii garante a segurança dos meus dados?",
-    faq1Answer: "Utilizamos criptografia de ponta e seguimos rigorosamente a LGPD. Seus dados nunca são compartilhados com terceiros.",
     faq2Question: "A IA realmente conversa de forma natural?",
     faq2Answer: "Sim! Nossa IA é treinada com milhões de conversas reais e se adapta ao seu estilo de comunicação.",
     faq3Question: "Posso cancelar a qualquer momento?",
     faq3Answer: "Claro! Não há fidelidade. Você pode cancelar sua assinatura a qualquer momento pelo painel de controle.",
-    faq4Question: "Quais aplicativos são suportados?",
-    faq4Answer: "Suportamos Tinder, Bumble, Hinge, Badoo e outros principais apps de relacionamento.",
 
     // CTA
     ctaTitle: "Pronto para encontrar alguém especial?",
@@ -587,14 +583,10 @@ const translations = {
     // FAQ
     faqTitle: "Frequently Asked Questions",
     faqSubtitle: "Get your questions about Talkii answered",
-    faq1Question: "How does Talkii ensure the security of my data?",
-    faq1Answer: "We use end-to-end encryption and strictly follow GDPR. Your data is never shared with third parties.",
     faq2Question: "Does the AI really chat naturally?",
     faq2Answer: "Yes! Our AI is trained with millions of real conversations and adapts to your communication style.",
     faq3Question: "Can I cancel at any time?",
     faq3Answer: "Of course! There's no commitment. You can cancel your subscription at any time from the control panel.",
-    faq4Question: "Which apps are supported?",
-    faq4Answer: "We support Tinder, Bumble, Hinge, Badoo and other major dating apps.",
 
     // CTA
     ctaTitle: "Ready to find someone special?",
@@ -616,10 +608,8 @@ type FaqItem = { question: string; answer: string; open: boolean }
 const faqs = ref<FaqItem[]>([])
 
 const buildFaqs = (tr: Translation, prev: FaqItem[] = []): FaqItem[] => ([
-  { question: tr.faq1Question, answer: tr.faq1Answer, open: prev[0]?.open ?? false },
-  { question: tr.faq2Question, answer: tr.faq2Answer, open: prev[1]?.open ?? false },
-  { question: tr.faq3Question, answer: tr.faq3Answer, open: prev[2]?.open ?? false },
-  { question: tr.faq4Question, answer: tr.faq4Answer, open: prev[3]?.open ?? false },
+  { question: tr.faq2Question, answer: tr.faq2Answer, open: prev[0]?.open ?? false },
+  { question: tr.faq3Question, answer: tr.faq3Answer, open: prev[1]?.open ?? false },
 ])
 
 // inicializa e mantém as perguntas sincronizadas com o idioma
