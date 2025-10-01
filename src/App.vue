@@ -431,19 +431,19 @@ const translations = {
     heroTitle3: ", mas damos a ",
     heroTitle4: "assistência ",
     heroTitle5: "perfeita",
-    heroDescription: "Automatize suas conversas iniciais e chegue ao encontro mais rápido. Nossa IA conversa por você até o momento certo de assumir o controle.",
+    heroDescription: "Comece conversas sem esforço. A Talkii te dá as melhores respostas até o momento certo de você assumir.",
     tryFree: "Experimente Grátis",
     seeHowWorks: "Ver Como Funciona",
 
     // How It Works
     howItWorksTitle: "Como a Talkii funciona para você",
-    howItWorksSubtitle: "Três passos simples para transformar seus matches em encontros reais",
-    step1Title: "1. Conecte seus apps",
-    step1Description: "Integre Tinder, Bumble, Hinge e outros aplicativos de relacionamento de forma segura",
-    step2Title: "2. IA conversa por você",
-    step2Description: "Nossa inteligência artificial inicia e mantém conversas naturais e envolventes",
-    step3Title: "3. Você assume no encontro",
-    step3Description: "Receba o contato quando a pessoa estiver pronta para o encontro real",
+    howItWorksSubtitle: "Três passos simples para transformar suas conversas em conexões reais",
+    step1Title: "1. Comece no WhatsApp",
+    step1Description: "Fale direto com a Talkii, sua parceira inteligente no amor, em um chat prático e sempre disponível.",
+    step2Title: "2. Tenha respostas certeiras",
+    step2Description: "A IA sugere mensagens criativas, quebra-gelos e estratégias para deixar a conversa leve, divertida e envolvente.",
+    step3Title: "3. Assuma com confiança",
+    step3Description: "Deixe a Talkii conduzir o início e, quando chegar a hora, entre em cena com naturalidade e autenticidade.",
 
     // Benefits
     benefitsTitle: "Por que escolher a Talkii?",
@@ -508,7 +508,7 @@ const translations = {
     ctaButton: "Começar Minha Jornada",
 
     // Footer
-    footerText: "Automatização inteligente para seus encontros",
+    footerText: "Converse melhor, conquiste mais",
     privacy: "Privacidade",
     terms: "Termos",
     allRightsReserved: "Todos os direitos reservados."
@@ -529,23 +529,23 @@ const translations = {
     heroTitle3: ", but we provide the perfect ",
     heroTitle4: "assist",
     heroTitle5: "",
-    heroDescription: "Automate your initial conversations and get to the date faster. Our AI chats for you until the right moment to take control.",
+    heroDescription: "Start conversations effortlessly. Talkii gives you the best replies until the right moment to take over.",
     tryFree: "Try Free",
     seeHowWorks: "See How It Works",
 
     // How It Works
     howItWorksTitle: "How Talkii works for you",
-    howItWorksSubtitle: "Three simple steps to turn your matches into real dates",
-    step1Title: "1. Connect your apps",
-    step1Description: "Securely integrate Tinder, Bumble, Hinge and other dating apps",
-    step2Title: "2. AI chats for you",
-    step2Description: "Our artificial intelligence starts and maintains natural, engaging conversations",
-    step3Title: "3. You take over for the date",
-    step3Description: "Get the contact when the person is ready for the real date",
+    howItWorksSubtitle: "Three simple steps to turn your chats into real connections",
+    step1Title: "1. Start on WhatsApp",
+    step1Description: "Chat directly with Talkii, your smart partner in love, always practical and available.",
+    step2Title: "2. Get spot-on replies",
+    step2Description: "AI suggests creative messages, icebreakers and strategies to keep the conversation light, fun and engaging.",
+    step3Title: "3. Take over with confidence",
+    step3Description: "Let Talkii guide the start and, when the time is right, step in naturally and authentically.",
 
     // Benefits
     benefitsTitle: "Why choose Talkii?",
-    benefitsSubtitle: "Transform your dating app experience",
+    benefitsSubtitle: "Transform your dating experience",
     saveTime: "Save Time",
     saveTimeDesc: "No more hours wasted on conversations that lead nowhere",
     effectiveMatches: "Effective Matches",
@@ -602,7 +602,7 @@ const translations = {
     ctaButton: "Start My Journey",
 
     // Footer
-    footerText: "Smart automation for your dates",
+    footerText: "Chat better, connect more",
     privacy: "Privacy",
     terms: "Terms",
     allRightsReserved: "All rights reserved."
