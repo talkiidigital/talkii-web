@@ -31,11 +31,11 @@
 
           <!-- Language Toggle & CTA -->
           <div class="flex items-center space-x-4">
-            <button @click="toggleLanguage"
+            <!-- <button @click="toggleLanguage"
               class="flex items-center space-x-1 px-3 py-2 rounded-lg border border-gray-200 hover:border-primary-300 transition-colors">
               <Globe class="h-4 w-4" />
               <span class="text-sm font-medium">{{ currentLanguage.toUpperCase() }}</span>
-            </button>
+            </button> -->
             <button class="btn-primary hidden md:block" @click="scrollToSection('precos')">
               {{ t.getStarted }}
             </button>
@@ -391,7 +391,6 @@ import {
   Check,
   Menu,
   X,
-  Globe
 } from 'lucide-vue-next'
 
 import heroImage from './assets/hero-image.png'
@@ -610,9 +609,9 @@ watch(t, (tr) => { faqs.value = buildFaqs(tr, faqs.value) })
 
 const displayPremiumPrice = computed(() => t.value.premiumPrice)
 
-const toggleLanguage = () => {
-  currentLanguage.value = currentLanguage.value === 'pt' ? 'en' : 'pt'
-}
+// const toggleLanguage = () => {
+//   currentLanguage.value = currentLanguage.value === 'pt' ? 'en' : 'pt'
+// }
 
 const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value
