@@ -36,7 +36,7 @@
               <Globe class="h-4 w-4" />
               <span class="text-sm font-medium">{{ currentLanguage.toUpperCase() }}</span>
             </button>
-            <button class="btn-primary hidden md:block">
+            <button class="btn-primary hidden md:block" @click="scrollToSection('precos')">
               {{ t.getStarted }}
             </button>
 
@@ -67,7 +67,7 @@
             <a href="#contato" @click="closeMobileMenu" class="text-gray-700 hover:text-primary-500 transition-colors">
               {{ t.contact }}
             </a>
-            <button class="btn-primary w-full">
+            <button class="btn-primary w-full" @click="scrollToSection('precos')">
               {{ t.getStarted }}
             </button>
           </div>
@@ -76,7 +76,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+    <section id="inicio" class="bg-gradient-to-br from-primary-50 to-secondary-50 py-10">
       <div class="container-custom">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="animate-fade-in-up">
