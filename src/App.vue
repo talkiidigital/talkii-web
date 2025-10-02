@@ -178,7 +178,7 @@
           </div>
 
           <div class="text-center card-hover p-6 bg-white rounded-xl shadow-lg">
-            <MessageCircle class="h-12 w-12 text-primary-500 mx-auto mb-4" />
+            <MessageCircle class="h-12 w-12 text-secondary-900 mx-auto mb-4" />
             <h3 class="text-lg font-bold text-gray-900 mb-2">{{ t.naturalConversations }}</h3>
             <p class="text-gray-600 text-sm">{{ t.naturalConversationsDesc }}</p>
           </div>
