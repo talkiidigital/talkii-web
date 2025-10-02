@@ -273,12 +273,6 @@
             <div class="rounded-3xl bg-white/80 backdrop-blur p-8 md:p-12">
               <div class="md:grid md:grid-cols-2 md:gap-10 items-center">
                 <div>
-                  <div class="flex items-center gap-3 mb-4">
-                    <span
-                      class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-700">{{
-                        t.planBadge }}</span>
-                    <span class="text-xs uppercase tracking-wider text-gray-500">{{ t.noCommitment }}</span>
-                  </div>
                   <h3 class="text-3xl font-extrabold text-gray-900 mb-2">{{ t.premiumPlan }}</h3>
                   <div class="flex items-end gap-2 mb-6">
                     <span class="text-6xl font-extrabold gradient-text">{{ displayPremiumPrice }}</span>
@@ -463,14 +457,12 @@ const translations = {
     // Pricing
     pricingTitle: "Planos que cabem no seu bolso",
     pricingSubtitle: "Escolha o plano ideal para você",
-    planBadge: "Plano único",
-    noCommitment: "SEM FIDELIDADE",
-    trialText: "7 dias grátis. Cancele quando quiser.",
+    trialText: "Cancele quando quiser.",
     basicPlan: "Básico",
     basicPrice: "R$ 29",
     proPlan: "Pro",
     proPrice: "R$ 59",
-    premiumPlan: "Premium",
+    premiumPlan: "Plano Mensal",
     premiumPrice: "R$ 29",
     month: "mês",
     mostPopular: "Mais Popular",
@@ -481,10 +473,10 @@ const translations = {
     proFeature2: "Conversas ilimitadas",
     proFeature3: "Relatórios detalhados",
     proFeature4: "Suporte prioritário",
-    premiumFeature1: "Todos os aplicativos",
-    premiumFeature2: "Coach pessoal",
-    premiumFeature3: "Análise avançada",
-    premiumFeature4: "Suporte 24/7",
+    premiumFeature1: "Chat exclusivo Whatsapp",
+    premiumFeature2: "IA se adapta ao seu estilo",
+    premiumFeature3: "Conversas naturais",
+    premiumFeature4: "Disponível 24/7",
 
     // FAQ
     faqTitle: "Perguntas Frequentes",
@@ -559,19 +551,17 @@ const translations = {
     // Pricing
     pricingTitle: "Plans that fit your budget",
     pricingSubtitle: "Choose the ideal plan for you",
-    planBadge: "Single plan",
-    noCommitment: "NO COMMITMENT",
-    trialText: "7-day free trial. Cancel anytime.",
+    trialText: "Cancel anytime.",
     basicPlan: "Basic",
     basicPrice: "$19",
     proPlan: "Pro",
     proPrice: "$39",
-    premiumPlan: "Premium",
+    premiumPlan: "Monthly Plan",
     premiumPrice: "$6",
-    premiumFeature1: "All apps",
-    premiumFeature2: "Personal coach",
-    premiumFeature3: "Advanced analytics",
-    premiumFeature4: "24/7 support",
+    premiumFeature1: "Exclusive WhatsApp chat",
+    premiumFeature2: "AI adapts to your style",
+    premiumFeature3: "Natural conversations",
+    premiumFeature4: "Available 24/7",
     month: "month",
     mostPopular: "Most Popular",
     basicFeature1: "1 connected app",
